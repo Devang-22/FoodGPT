@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Recipes</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <img src="./img/back.png" alt="Back icon" />
+        <span>Go back to home page</span>
+      </a>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+      <div class="box">
+        <!-- Search Section -->
+        <div class="search">
+          <h1>Find Recipes by Ingredients</h1>
+          <input
+            id="ingredientInput"
+            type="text"
+            placeholder="Enter ingredients (comma-separated)"
+          />
+          <br />
+          <button id="searchBtn">
+            <i class="fas fa-search"></i> Search
+          </button>
+        </div>
+
+        <!-- Recipes Section -->
+        <div id="recipes" class="recipes">
+          <!-- Recipes will be dynamically inserted here -->
+        </div>
+
+        <!-- Recipe Details Section -->
+        <div id="recipeDetails" class="recipe-details">
+          <!-- Recipe details will be dynamically displayed here -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./img/pizza1.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(148, 201, 255, 0.9);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: rgba(148, 201, 255, 1);
+}
+
+header img {
+    width: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box */
+.box {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Search Section */
+.search h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+#ingredientInput {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #d3a716;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#ingredientInput:focus {
+    border-color: #f5c518;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #d3a716;
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f5c518;
+    transform: translateY(-2px);
+}
+
+/* Recipes Section */
+.recipes {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Card */
+.recipe-card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe Details Section */
+.recipe-details {
+    display: none;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.recipe-details img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.recipe-details h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.recipe-details ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.recipe-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.recipe-details a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #d3a716;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.recipe-details a:hover {
+    background-color: #f5c518;
+    transform: translateY(-2px);
+}
